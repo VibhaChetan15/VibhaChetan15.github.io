@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(146,146,146,1.00);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+body
+{
+	background-color: #e6e7e8;
+}
+/* Logo placeholder*/
+#logo {
+  float: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: white;
+  background-color:#00ced1;
+}
+#logo.logoc
+{
+  
+  position: relative;
+  display: inline;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    resize: vertical;
+}
+input[type=text]:hover , select:hover {
+    border-color: #00ced1;
+}
+    
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+ input[type=submit] {
+  background-color:#00ced1;
+   
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+ float: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    
+
+
+}
+
+ input[type=submit]:hover {
+    background-color: #0bffff;
+    color: black;
+
+}
+#head
+{
+  width: 100%;
+  height: auto;
+}
+.instruct {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 35%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin: 3%;
+    line-height: 2;
+    border    
+}
+
+ 
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 55%;
+    display: inline-block;
+    float: right;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 13%;
+}
+
+ .col-25 {
+    float: left;
+    width: 35%;
+    margin-top: 6px;
+
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#mainWrapper footer {
+  clear: both;
+  overflow: auto;
+  background-color: #f2f2f2;
+  font-family: source-sans-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 7pt;
+  line-height: 1.8;
+  padding-top: 12px;
+  padding-left: 12px;
+  text-align: center;
+  padding-bottom: 0;
+  padding-right: 12px;
+ 
+  }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #head .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        overflow: auto;
+        display: inline;
+
+    }
+    .container
+    {
+      width: 100%;
+      overflow: hidden;
+      
+      margin:0;
+    }
+    .instruct
+    {
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+
+    }
+
+    input[type=submit]
+    {
+      margin-top: 15px;
+    }
+
+#mainWrapper footer {
+  padding-left: 16px;
+  overflow: hidden;
+
+}
+footer .footerlinks p {
+  display: inline;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="mainWrapper">
+
+  <header> 
+   
+    <div id="logo"> <a id = link href="cbse2.html" title="click to fo to CBSE Website"> <img src="cbse-logo.png" width="100" height="90" alt="click to fo to CBSE Website"/ class="logoc"> </a>
+    <!-- <button><a id = link href="http://cbse.nic.in/newsite/index.html" title="website"> CBSE Website </a> </button> -->
+    
+    <h1 id="head"> Central Board of Secondary Education Results </h1> 
+     </div> </header>
+
+
+
+  <div id ='head'>
+    <section>
+<div class="instruct">
+<h3> Instructions </h3>
+<p> 1. Type your Registration Number <br> </p>
+<p> 2. Type the Hall ticket number mentioned on top right corner on the hall ticket. <br> </p>
+<p> 3. Select your Date of Birth <br>
+</p> </div> </section>
+
+<section>
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname"> Registration Number </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder=" AA 000 0000 " length="10">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname"> Hall Ticket Number </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="000 0000" length="7">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+      <label for="dob"> Date  </label>
+      </div>
+      <div class="col-75">
+        <select id="dob" name="dob">
+           <option value="2002">1</option>
+          <option value="2032">2</option>
+          <option value="2033">3</option>
+          <option value="2034">4</option>
+          <option value="2035">5</option>
+          <option value="2036">6</option>
+          <option value="2037">7</option>
+          <option value="2038">8</option>
+          <option value="2039">9</option>
+          <option value="2040">10</option>
+          <option value="2041">11</option>
+          <option value="2042">12</option>
+          <option value="2043">13</option>
+          <option value="2044">14</option>
+          <option value="2045">15</option>
+          <option value="2046">16</option>
+          <option value="2047">17</option>
+          <option value="2018">18</option>
+          <option value="2019">19</option>
+          <option value="2020">20</option>
+          <option value="2021">21</option>
+          <option value="2022">22</option>
+          <option value="2023">23</option>
+          <option value="2024">24</option>
+          <option value="2025">25</option>
+          <option value="2026">26</option>
+          <option value="2027">27</option>
+          <option value="2028">28</option>
+          <option value="2029">29</option>
+          <option value="2030">30</option>
+          <option value="2031">31</option>
+
+        </select>
+</div> </div>
+        
+<div class="row"> <div class="col-25">
+        <label for="dob
+        ">  Month </label>
+      </div>
+      <div class="col-75">
+        <select id="mob" name="mob">
+           <option value="2002">1</option>
+          <option value="2032">2</option>
+          <option value="2033">3</option>
+          <option value="2034">4</option>
+          <option value="2035">5</option>
+          <option value="2036">6</option>
+          <option value="2037">7</option>
+          <option value="2038">8</option>
+          <option value="2039">9</option>
+          <option value="2040">10</option>
+          <option value="2041">11</option>
+          <option value="2042">12</option>
+          
+
+        </select>
+
+      </div>  </div>
+  
+  <div class="row"> <div class="col-25">
+        <label for="yob
+        ">  Year </label>
+      </div> 
+      <div class="col-75">
+        <select id="yob" name="yob">
+           <option value="2002">1997</option>
+          <option value="2032">1998</option>
+          <option value="2033">1999</option>
+          <option value="2034">2000</option>
+          <option value="2035">2001</option>
+         </select>
+       </div> </div>
+
+
+
+    
+    
+    <div class="row">
+     
+      <input type="submit" value="Get Result">
+
+    
+</div> </form> </div> </section> 
+
+<footer> 
+    
+    
+      <p>
+Disclaimer: Neither NIC nor CBSE is responsible for any inadvertent error that may have crept in the results being published on NET. The results published on net are for immediate information to the examinees. </p>
+   <hr>  
+      <p>Designed By Vibha Chetan.</p> </footer>  
+    </body> 
+      </html> 
+   
+  
